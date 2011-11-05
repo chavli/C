@@ -1,0 +1,119 @@
+START FILE: start/worst
+GOAL FILE: goal/default
+TIME: 1316480760
+[0]SearchNode Contents
+[EightNode] g(n): 0, h(n): 0
+-------
+|5 6 7|
+|4 0 8|start state
+|3 2 1|
+-------
+
+[0]SearchNode Contents
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|8 0 4|goal state
+|7 6 5|
+-------
+
+Running Best First Search with misplacedTiles...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 945
+NODES EXPANDED(explored): 1520
+GOAL DEPTH: 64
+TIME: 1316480760
+
+Running Best First Search with manhattanDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 219
+NODES EXPANDED(explored): 282
+GOAL DEPTH: 54
+TIME: 1316480760
+
+Running Best First Search with dominoDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 269
+NODES EXPANDED(explored): 326
+GOAL DEPTH: 74
+TIME: 1316480760
+
+Running A* with misplacedTiles...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 70033
+NODES EXPANDED(explored): 257517
+GOAL DEPTH: 30
+TIME: 1316490395
+
+Running A* with manhattanDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 2457
+NODES EXPANDED(explored): 3983
+GOAL DEPTH: 30
+TIME: 1316490396
+
+Running A* with dominoDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 4850
+NODES EXPANDED(explored): 6602
+GOAL DEPTH: 32
+TIME: 1316490399
+
+Running IDA* with misplacedTiles...
+Bubble radius: 0
+Bubble radius: 9
+Bubble radius: 10
+Bubble radius: 11
+Bubble radius: 12
+Bubble radius: 13
+Bubble radius: 14
+Bubble radius: 15
+Bubble radius: 16
+Bubble radius: 17
+Bubble radius: 18
+Bubble radius: 19
+Bubble radius: 20
+Bubble radius: 21
+Bubble radius: 22
+Bubble radius: 23
+Bubble radius: 24
+Bubble radius: 25
+Bubble radius: 26
+Bubble radius: 27
+Bubble radius: 28
+Bubble radius: 29
+Bubble radius: 30
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 70033
+NODES EXPANDED(explored): 257517
+GOAL DEPTH: 30
+TIME: 1316509882
+
+Running IDA* with manhattanDistance...
+Bubble radius: 0
+Bubble radius: 25
+Bubble radius: 26
+Bubble radius: 27
+Bubble radius: 28
+Bubble radius: 29
+Bubble radius: 30
+Bubble radius: 31
+Bubble radius: 32
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 2457
+NODES EXPANDED(explored): 3983
+GOAL DEPTH: 30
+TIME: 1316509883
+
+Running IDA* with dominoDistance...
+Bubble radius: 0
+Bubble radius: 40
+Bubble radius: 42
+Bubble radius: 44
+Bubble radius: 46
+Bubble radius: 48
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 4850
+NODES EXPANDED(explored): 6602
+GOAL DEPTH: 32
+TIME: 1316509886
