@@ -1,0 +1,98 @@
+=== City Adjacency Data ===
+[0x14fd6f0]buch h(n) = 0: [pit: 101] [faga: 211] [urz: 85] [giu: 90] 
+[0x14fd740]cra h(n) = 160: [dob: 120] [rim: 146] [pit: 138] 
+[0x14fd790]hir h(n) = 151: [efo: 86] [urz: 98] 
+[0x14fd7e0]tim h(n) = 329: [arad: 118] [lug: 111] 
+[0x14fd830]dob h(n) = 242: [cra: 120] [meh: 75] 
+[0x14fd880]giu h(n) = 77: [buch: 90] 
+[0x14fd8d0]efo h(n) = 161: [hir: 86] 
+[0x14fd920]meh h(n) = 241: [dob: 75] [lug: 70] 
+[0x14fd970]nea h(n) = 234: [ias: 87] 
+[0x14fd9c0]zer h(n) = 374: [arad: 75] [ora: 71] 
+[0x14fda10]sib h(n) = 253: [arad: 140] [ora: 151] [faga: 99] [rim: 80] 
+[0x14fda60]rim h(n) = 193: [sib: 80] [pit: 97] [cra: 146] 
+[0x14fdab0]ias h(n) = 226: [nea: 87] [vas: 92] 
+[0x14fdb00]arad h(n) = 366: [zer: 75] [sib: 140] [tim: 118] 
+[0x14fdb50]lug h(n) = 244: [meh: 70] [tim: 111] 
+[0x14fdba0]vas h(n) = 199: [urz: 142] [ias: 92] 
+[0x14fdbf0]faga h(n) = 176: [sib: 99] [buch: 211] 
+[0x14fdc40]pit h(n) = 100: [rim: 97] [cra: 138] [buch: 101] 
+[0x14fdc90]urz h(n) = 80: [buch: 85] [hir: 98] [vas: 142] 
+[0x14fdce0]ora h(n) = 380: [zer: 71] [sib: 151] 
+
+
+Running Depth First Search...
+=== SEARCH STATISTICS ===
+PATH: buch <- pit <- cra <- dob <- meh <- lug <- tim <- arad <- start
+PATH LENGTH: 733
+PATH DEPTH: 7
+
+Running Iterative Deepening Search...
+Max Depth: 0
+Max Depth: 1
+Max Depth: 2
+Max Depth: 3
+=== SEARCH STATISTICS ===
+PATH: buch <- faga <- sib <- arad <- start
+PATH LENGTH: 450
+PATH DEPTH: 3
+
+Running Breadth First Search...
+=== SEARCH STATISTICS ===
+PATH: buch <- faga <- sib <- arad <- start
+PATH LENGTH: 450
+PATH DEPTH: 3
+
+Running Uniform Cost Search...
+=== SEARCH STATISTICS ===
+PATH: buch <- faga <- sib <- arad <- start
+PATH LENGTH: 450
+PATH DEPTH: 3
+
+Running Best First Search with straightLineDistance...
+=== SEARCH STATISTICS ===
+PATH: buch <- faga <- sib <- arad <- start
+PATH LENGTH: 450
+PATH DEPTH: 3
+
+Running Best First Search with nonEuclideanDistance...
+=== SEARCH STATISTICS ===
+PATH: buch <- faga <- sib <- arad <- start
+PATH LENGTH: 450
+PATH DEPTH: 3
+
+Running A* Search with straightLineDistance...
+=== SEARCH STATISTICS ===
+PATH: buch <- pit <- rim <- sib <- arad <- start
+PATH LENGTH: 418
+PATH DEPTH: 3
+
+Running A* Search with nonEuclideanDistance...
+=== SEARCH STATISTICS ===
+PATH: buch <- pit <- rim <- sib <- arad <- start
+PATH LENGTH: 418
+PATH DEPTH: 3
+
+Running IDA* Search  with straightLineDistance...
+Bubble radius: 0
+Bubble radius: 393
+Bubble radius: 413
+Bubble radius: 415
+Bubble radius: 417
+Bubble radius: 447
+=== SEARCH STATISTICS ===
+PATH: buch <- pit <- rim <- sib <- arad <- start
+PATH LENGTH: 418
+PATH DEPTH: 3
+
+Running IDA* Search  with nonEuclideanDistance...
+Bubble radius: 0
+Bubble radius: 393
+Bubble radius: 413
+Bubble radius: 415
+Bubble radius: 417
+Bubble radius: 447
+=== SEARCH STATISTICS ===
+PATH: buch <- pit <- rim <- sib <- arad <- start
+PATH LENGTH: 418
+PATH DEPTH: 3

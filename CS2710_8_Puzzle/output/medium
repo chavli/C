@@ -1,0 +1,133 @@
+START FILE: start/medium
+GOAL FILE: goal/default
+TIME: 1316411928
+[0]SearchNode Contents
+[EightNode] g(n): 0, h(n): 0
+-------
+|2 8 1|
+|0 4 3|start state
+|7 6 5|
+-------
+
+[0]SearchNode Contents
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|8 0 4|goal state
+|7 6 5|
+-------
+
+Running Breadth First Search...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 236
+NODES EXPANDED(explored): 359
+GOAL DEPTH: 9
+TIME: 1316411928
+
+Running Uniform Cost Search...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 236
+NODES EXPANDED(explored): 359
+GOAL DEPTH: 9
+TIME: 1316411928
+
+Running Depth First Search...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 69554
+NODES EXPANDED(explored): 115892
+GOAL DEPTH: 106321
+TIME: 1316414252
+
+Running Iterative Deepening Search...
+Max Depth: 0
+Max Depth: 1
+Max Depth: 2
+Max Depth: 3
+Max Depth: 4
+Max Depth: 5
+Max Depth: 6
+Max Depth: 7
+Max Depth: 8
+Max Depth: 9
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 11
+NODES EXPANDED(explored): 221
+GOAL DEPTH: 9
+TIME: 1316414252
+
+Running Best First Search with misplacedTiles...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 51
+NODES EXPANDED(explored): 67
+GOAL DEPTH: 9
+TIME: 1316414252
+
+Running Best First Search with manhattanDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 181
+NODES EXPANDED(explored): 249
+GOAL DEPTH: 19
+TIME: 1316414252
+
+Running Best First Search with dominoDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 147
+NODES EXPANDED(explored): 167
+GOAL DEPTH: 19
+TIME: 1316414252
+
+Running A* with misplacedTiles...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 28
+NODES EXPANDED(explored): 31
+GOAL DEPTH: 9
+TIME: 1316414252
+
+Running A* with manhattanDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 17
+NODES EXPANDED(explored): 17
+GOAL DEPTH: 9
+TIME: 1316414252
+
+Running A* with dominoDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 30
+NODES EXPANDED(explored): 31
+GOAL DEPTH: 9
+TIME: 1316414252
+
+Running IDA* with misplacedTiles...
+Bubble radius: 0
+Bubble radius: 6
+Bubble radius: 7
+Bubble radius: 8
+Bubble radius: 9
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 28
+NODES EXPANDED(explored): 31
+GOAL DEPTH: 9
+TIME: 1316414252
+
+Running IDA* with manhattanDistance...
+Bubble radius: 0
+Bubble radius: 9
+Bubble radius: 10
+Bubble radius: 11
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 17
+NODES EXPANDED(explored): 17
+GOAL DEPTH: 9
+TIME: 1316414252
+
+Running IDA* with dominoDistance...
+Bubble radius: 0
+Bubble radius: 21
+Bubble radius: 23
+Bubble radius: 25
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 30
+NODES EXPANDED(explored): 31
+GOAL DEPTH: 9
+TIME: 1316414252
+

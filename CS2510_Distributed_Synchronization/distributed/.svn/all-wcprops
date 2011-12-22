@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/clock-synchronization/!svn/ver/32/trunk/distributed
+END
+distnode.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/clock-synchronization/!svn/ver/32/trunk/distributed/distnode.h
+END
+listnode.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/clock-synchronization/!svn/ver/32/trunk/distributed/listnode.c
+END
+message.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/clock-synchronization/!svn/ver/32/trunk/distributed/message.c
+END
+listnode.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/clock-synchronization/!svn/ver/32/trunk/distributed/listnode.h
+END
+distnode.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/clock-synchronization/!svn/ver/32/trunk/distributed/distnode.c
+END
+message.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/clock-synchronization/!svn/ver/32/trunk/distributed/message.h
+END
+driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/clock-synchronization/!svn/ver/32/trunk/distributed/driver.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/clock-synchronization/!svn/ver/32/trunk/distributed/Makefile
+END

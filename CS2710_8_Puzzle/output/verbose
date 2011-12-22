@@ -1,0 +1,666 @@
+START FILE: start/default
+GOAL FILE: goal/simple_dfs
+TIME: 1316579507
+[0]SearchNode Contents
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+[0]SearchNode Contents
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+Running Breadth First Search...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 13
+NODES EXPANDED(explored): 18
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running Uniform Cost Search...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 13
+NODES EXPANDED(explored): 18
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running Depth First Search...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 25
+NODES EXPANDED(explored): 27
+GOAL DEPTH: 27
+Solution (backwards):
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|Board 5@8 -> 0@5
+|7 8 0|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 0|Board 4@5 -> 0@4
+|7 8 5|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 0 4|Board 6@4 -> 0@3
+|7 8 5|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|0 6 4|Board 7@3 -> 0@6
+|7 8 5|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|7 6 4|Board 8@6 -> 0@7
+|0 8 5|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|7 6 4|Board 5@7 -> 0@8
+|8 0 5|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|7 6 4|Board 4@8 -> 0@5
+|8 5 0|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|7 6 0|Board 6@5 -> 0@4
+|8 5 4|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|7 0 6|Board 7@4 -> 0@3
+|8 5 4|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|0 7 6|Board 8@3 -> 0@6
+|8 5 4|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|8 7 6|Board 5@6 -> 0@7
+|0 5 4|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|8 7 6|Board 4@7 -> 0@8
+|5 0 4|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|8 7 6|Board 6@8 -> 0@5
+|5 4 0|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|8 7 0|Board 7@5 -> 0@4
+|5 4 6|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|8 0 7|Board 8@4 -> 0@3
+|5 4 6|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|0 8 7|Board 5@3 -> 0@6
+|5 4 6|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|5 8 7|Board 4@6 -> 0@7
+|0 4 6|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|5 8 7|Board 6@7 -> 0@8
+|4 0 6|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|5 8 7|Board 7@8 -> 0@5
+|4 6 0|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|5 8 0|Board 8@5 -> 0@4
+|4 6 7|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|5 0 8|Board 5@4 -> 0@3
+|4 6 7|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|0 5 8|Board 4@3 -> 0@6
+|4 6 7|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 5 8|Board 6@6 -> 0@7
+|0 6 7|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 5 8|Board 7@7 -> 0@8
+|6 0 7|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 5 8|Board 8@8 -> 0@5
+|6 7 0|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 5 0|Board 5@5 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running Iterative Deepening Search...
+Max Depth: 0
+Max Depth: 1
+Max Depth: 2
+Max Depth: 3
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 5
+NODES EXPANDED(explored): 6
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running Best First Search with misplacedTiles...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 5
+NODES EXPANDED(explored): 3
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 0, h(n): 1
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 2
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running Best First Search with manhattanDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 6
+NODES EXPANDED(explored): 4
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 0, h(n): 2
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 4
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running Best First Search with dominoDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 5
+NODES EXPANDED(explored): 3
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 0, h(n): 15
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 0, h(n): 14
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 15
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running A* with misplacedTiles...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 5
+NODES EXPANDED(explored): 3
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 3, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 2, h(n): 1
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 1, h(n): 2
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running A* with manhattanDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 6
+NODES EXPANDED(explored): 4
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 3, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 2, h(n): 2
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 1, h(n): 4
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running A* with dominoDistance...
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 6
+NODES EXPANDED(explored): 4
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 3, h(n): 15
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 2, h(n): 14
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 1, h(n): 15
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running IDA* with misplacedTiles...
+Bubble radius: 0
+Bubble radius: 3
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 5
+NODES EXPANDED(explored): 3
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 3, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 2, h(n): 1
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 1, h(n): 2
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running IDA* with manhattanDistance...
+Bubble radius: 0
+Bubble radius: 5
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 6
+NODES EXPANDED(explored): 4
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 3, h(n): 0
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 2, h(n): 2
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 1, h(n): 4
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
+Running IDA* with dominoDistance...
+Bubble radius: 0
+Bubble radius: 16
+Bubble radius: 18
+=== SEARCH STATISTICS ===
+MAX FRINGE LENGTH: 6
+NODES EXPANDED(explored): 4
+GOAL DEPTH: 3
+Solution (backwards):
+[EightNode] g(n): 3, h(n): 15
+-------
+|1 2 3|
+|6 4 5|goal state
+|7 0 8|
+-------
+
+[EightNode] g(n): 2, h(n): 14
+-------
+|1 2 3|
+|6 4 5|Board 6@6 -> 0@3
+|0 7 8|
+-------
+
+[EightNode] g(n): 1, h(n): 15
+-------
+|1 2 3|
+|0 4 5|Board 4@3 -> 0@4
+|6 7 8|
+-------
+
+[EightNode] g(n): 0, h(n): 0
+-------
+|1 2 3|
+|4 0 5|start state
+|6 7 8|
+-------
+
+TIME: 1316579507
+
