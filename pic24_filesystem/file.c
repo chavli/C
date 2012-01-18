@@ -75,7 +75,6 @@ void filesys_init(){
     nothing
 */
 uint8_t filesys_quick_format(){
-  printf("Quick Formattting...\n");
   if( files_opened == 0 )
     return pagesys_qwipe();
   return 0;
@@ -96,13 +95,13 @@ uint8_t filesys_quick_format(){
     nothing
 */
 uint8_t filesys_format(){
-  printf("Formattting...\n");
   if( files_opened == 0 )
     return pagesys_wipe();
   return 0;
 }
 
 
+#ifdef FILESYS_DEBUG
 /*
   file_print
 
@@ -124,6 +123,7 @@ void file_print(file_t *handle){
     printf("offset: %d\n\n", handle->offset);
   }
 }
+#endif
 
 
 /*
@@ -141,6 +141,8 @@ void file_print(file_t *handle){
     a file handle
 */
 file_t *file_open(char *name, char mode){
+
+
   file_t *handle; 
   page_t *h_page, *d_page;
   uint16_t pid;
@@ -152,7 +154,10 @@ file_t *file_open(char *name, char mode){
     //see if file already exists
     pid = file_exists(name);
     if(!pid) {
-      printf("creating %s\n", name);
+      #ifdef FILESYS_DEBUG
+      printf("creating file: %s\n ", name);
+      #endif
+
       //create file header page
       h_page = page_create(FILE_P); 
       page_write(h_page, 1, name, (strlen(name) > NAME_LEN) ? 
@@ -186,7 +191,9 @@ file_t *file_open(char *name, char mode){
     }
     //file alreay exists, open it. pages that are already open cant be reopened
     else{
-      printf("loading %s\n", name);
+      #ifdef FILESYS_DEBUG
+      printf("opening file: %s\n ", name);
+      #endif
       h_page = page_open(pid);
       if(h_page){
         handle = malloc(sizeof(file_t));
@@ -237,6 +244,9 @@ file_t *file_open(char *name, char mode){
     nothing
 */
 void file_close(file_t *handle){
+  #ifdef FILESYS_DEBUG
+  printf("closing file: %s\n ", handle->name);
+  #endif
   if(handle){
     //write back the file size
     page_write(handle->page, FILESIZE_OFFSET, (uint8_t *)&handle->size, FILESIZE_LEN);
@@ -296,7 +306,9 @@ uint8_t file_rename(char *old_name, char *new_name){}
     length if no more pages can be allocated to accomodate length.
 */
 uint32_t file_write(file_t *handle, char *buf, uint32_t length){
-  printf("writing %s\n", buf);
+  #ifdef FILESYS_DEBUG
+  printf("writing data: %s\n", buf);
+  #endif
   uint32_t total_write = 0, write = 0, pid;
   if(handle && (handle->flags & MODE_MASK) != FILE_READ ){
 
@@ -390,6 +402,9 @@ uint32_t file_writeline(file_t *handle, char *buf, uint32_t length){
     file.
 */
 uint32_t file_read(file_t *handle, char *buf, uint32_t length){
+  #ifdef FILESYS_DEBUG
+  printf("reading data...");
+  #endif
   uint32_t total_read = 0, read = 0, pid;
   if(handle && (handle->flags & MODE_MASK) == FILE_READ ){
   

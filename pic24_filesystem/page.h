@@ -155,7 +155,10 @@ void pagesys_init(void);
 uint8_t pagesys_qwipe(void);
 uint8_t pagesys_wipe(void);
 uint16_t pagesys_exists(uint8_t *name);
+
+#ifdef FILESYS_DEBUG
 void pagesys_print(void);
+#endif
 
 //functions that operate on individual pages
 page_t *page_create(uint8_t type);

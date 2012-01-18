@@ -63,7 +63,10 @@ typedef struct{
 void filesys_init(void);
 uint8_t filesys_quick_format(void);
 uint8_t filesys_format(void);
+
+#ifdef FILESYS_DEBUG
 void file_print(file_t *);
+#endif
 
 file_t *file_open(char *name, char mode);
 void file_close(file_t *handle);

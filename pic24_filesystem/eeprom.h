@@ -25,6 +25,9 @@
 #ifndef EEPROM_H
 #define EEPROM_H
 
+//used for debuging (hence the name)
+//#define FILESYS_DEBUG
+
 #define PAGE_STOP 0xFF        //the address a page ends on 0xXXXFF
 #define PAGE_EDGE 0x0100      //all pages start at a multiple of this value
 #define DISK_SIZE 131072      //total space available in bytes
@@ -46,9 +49,11 @@ void eeprom_erase_page(uint32_t address);
 void eeprom_wipe(void);
 
 //debugging stuff
+#ifdef FILESYS_DEBUG
 void eeprom_print(void);
 void eeprom_backup(void);
 void eeprom_recover(void);
+#endif
 
 #endif
 

@@ -124,7 +124,10 @@ uint16_t eeprom_write(uint32_t address, uint8_t *data, uint16_t length){
     memory[address++] = *data++;
     ++write;
   }
+
+  #ifdef FILESYS_DEBUG
   eeprom_backup();
+  #endif
   return write;
 }
 
@@ -170,7 +173,10 @@ uint16_t eeprom_erase(uint32_t address, uint16_t length){
     memory[address++] = 0;
     ++erase; 
   }
+
+  #ifdef FILESYS_DEBUG
   eeprom_backup();
+  #endif
   return erase;
 }
 
@@ -209,7 +215,7 @@ void eeprom_wipe(){
     memory[addr] = 0;
 }
 
-
+#ifdef FILESYS_DEBUG
 /*
   eeprom_print
 
@@ -263,3 +269,4 @@ void eeprom_recover(){
   fread(memory, DISK_SIZE, 1, handler);
   fclose(handler);
 }
+#endif

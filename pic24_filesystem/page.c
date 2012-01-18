@@ -87,9 +87,6 @@ void pagesys_init(){
   //NOTE: disk size hard coded at 128KB = 512 * 256B pages
   //512 bit bitmap = 64 bytes
   if(!(buf[PAGE_FLAGS] >> 7)){
-    printf("initializing page system\n");
-
-
     //page zero is never free
     buf[PAGE_EDGE - 1] = 0xFE;
     
@@ -102,8 +99,6 @@ void pagesys_init(){
     //signature
     eeprom_write(PAGE_0 + 16, "created by Cha Li 2012 -- chavli@gmail.com", 42);
   }
-  else
-    printf("page system intialized.\n");
 }
 
 
@@ -166,6 +161,7 @@ uint8_t pagesys_wipe(){
 }
 
 
+#ifdef FILESYS_DEBUG
 /*
   pagesys_print
 
@@ -192,6 +188,7 @@ void pagesys_print(){
       printf("[used] PAGE ID: %d (0x%X)\n", i, i * PAGE_EDGE);
   }
 }
+#endif
 
 
 /*
@@ -260,7 +257,6 @@ page_t *page_create(uint8_t type){
       
       //malloc a new page entry and mark the page as used
       if ( (buf[PAGE_EDGE - j] >> (i % 8)) & 0x1 ){
-        printf("allocated page %d (0x%X)\n", i, i * PAGE_EDGE);
         page_entry = malloc(sizeof(page_t));
         page_entry->address = i * PAGE_EDGE;
         page_entry->id = i;
